@@ -1,3 +1,5 @@
+import image from './assets/image.png'
+
 export const model = [{
 		type: 'title',
 		value: 'Follow The Evolution Of Web Development',
@@ -10,6 +12,22 @@ export const model = [{
 				padding: 30px 0;
 				color: #fff;
 				text-align: center;
+			`
+		}
+	},
+	{
+		type: 'image',
+		value: image,
+		options: {
+			styles: `
+				padding: 2rem 0;
+				display: flex;
+				justify-content: center;
+			`,
+			alt: 'My Image',
+			imageStyles: `
+				width: 500px;
+				height: auto;
 			`
 		}
 	},
